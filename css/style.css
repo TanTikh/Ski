@@ -245,54 +245,7 @@ section {
   right: 0;
   min-height: 100vh;
   width: 100%;
-  background: url("../img/background.jpg") top center/cover no-repeat;
-}
-
-.hero__welcome {
-  width: 100%;
-  padding-top: 14vh;
-  z-index: 1;
-  -webkit-animation: padding-top 1s linear 0s 1 normal forwards;
-          animation: padding-top 1s linear 0s 1 normal forwards;
-}
-
-.hero__welcome img {
-  width: 100%;
-  opacity: 0.8;
-}
-
-@-webkit-keyframes padding-top {
-  0% {
-    padding-top: 50vh;
-    opacity: 0;
-  }
-
-  100% {
-    padding-top: 14vh;
-    opacity: 1;
-  }
-}
-
-@keyframes padding-top {
-  0% {
-    padding-top: 50vh;
-    opacity: 0;
-  }
-
-  100% {
-    padding-top: 14vh;
-    opacity: 1;
-  }
-}
-
-.hero__mountains {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100.5vh;
-  z-index: 2;
-  background: url("../img/mountains-1.png") top center/cover no-repeat;
+  background: url("../img/1bg.jpg") top center/cover no-repeat;
 }
 
 .hero__content {
@@ -1147,8 +1100,8 @@ section {
     font-size: 48px;
   }
 
-  .hero__mountains {
-    background: url("../img/mountains-1.png") center center/cover no-repeat;
+  .hero {
+    min-height: 107vh;
   }
 
   .header__body {
@@ -1250,8 +1203,9 @@ section {
     padding: 0px 10px;
   }
 
-  .hero__mountains {
-    background: url("../img/mountains-1-tiny.png") center right/cover no-repeat;
+  .hero {
+    min-height: 100vh;
+    background: url("../img/1bg-mini.jpg") top center/cover no-repeat;
   }
 
   .hero__text {
@@ -1339,34 +1293,6 @@ section {
     line-height: 24px;
   }
 
-  .hero__welcome {
-    padding-top: 20vh;
-  }
-
-@-webkit-keyframes padding-top {
-    0% {
-      padding-top: 50vh;
-      opacity: 0;
-    }
-
-    100% {
-      padding-top: 20vh;
-      opacity: 1;
-    }
-}
-
-@keyframes padding-top {
-    0% {
-      padding-top: 50vh;
-      opacity: 0;
-    }
-
-    100% {
-      padding-top: 20vh;
-      opacity: 1;
-    }
-}
-
   .hero__text {
     max-width: 400px;
     margin-bottom: 30px;
@@ -1399,6 +1325,14 @@ section {
   .offer__text {
     line-height: 26px;
     padding-top: 20px;
+  }
+
+  .prices {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .plan {
@@ -1553,36 +1487,8 @@ section {
     line-height: 42px;
   }
 
-  .hero__welcome {
-    padding-top: 17vh;
-  }
-
-@-webkit-keyframes padding-top {
-    0% {
-      padding-top: 50vh;
-      opacity: 0;
-    }
-
-    100% {
-      padding-top: 17vh;
-      opacity: 1;
-    }
-}
-
-@keyframes padding-top {
-    0% {
-      padding-top: 50vh;
-      opacity: 0;
-    }
-
-    100% {
-      padding-top: 17vh;
-      opacity: 1;
-    }
-}
-
-  .hero__mountains {
-    background: url("../img/mountains-1-m.png") center/cover no-repeat;
+  .hero {
+    background: url("../img/1bg-mob.jpg") top center/cover no-repeat;
   }
 
   .hero__message .container {
@@ -1760,16 +1666,9 @@ section {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
+    max-width: 50%;
     -ms-flex-item-align: center;
         align-self: center;
-  }
-
-  .prices {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .plan__title {
@@ -1785,6 +1684,7 @@ section {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
+    max-width: 50%;
   }
 
   .team__photo img {
@@ -1907,9 +1807,10 @@ section {
   }
 
   .prices__col {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .plan {
@@ -1941,6 +1842,7 @@ section {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .team__photo img {
@@ -1999,39 +1901,5 @@ section {
   .container {
     max-width: none;
     padding: 0 20px;
-  }
-}
-
-@media (max-height: 480px) {
-  .hero__welcome {
-    padding-top: 18vh;
-  }
-
-@-webkit-keyframes padding-top {
-    0% {
-      padding-top: 50vh;
-      opacity: 0;
-    }
-
-    100% {
-      padding-top: 18vh;
-      opacity: 1;
-    }
-}
-
-@keyframes padding-top {
-    0% {
-      padding-top: 50vh;
-      opacity: 0;
-    }
-
-    100% {
-      padding-top: 18vh;
-      opacity: 1;
-    }
-}
-
-  .hero__mountains {
-    background: url("../img/mountains-1.png") center/cover no-repeat;
   }
 }

@@ -22,6 +22,7 @@ $(document).ready(function () {
 
 		var target = $(this).attr("href"); // Set the target as variable
 
+
 		// perform animated scrolling by getting top-position of target-element and set it as scroll target
 		$('html, body').stop().animate({
 			scrollTop: $(target).offset().top
@@ -46,9 +47,10 @@ $(document).ready(function () {
 
 		// Assign active class to nav links while scolling
 		$('.page-section').each(function (i) {
-			if ($(this).position().top <= scrollDistance) {
+			if ($(this).position().top <= scrollDistance + headerHeight) {
 				$('.nav__link.active-link').removeClass('active-link');
 				$('.nav__link').eq(i).addClass('active-link');
+
 			}
 		});
 	}).scroll();
