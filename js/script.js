@@ -5,7 +5,7 @@ $(document).ready(function () {
 	let vw = $(window).width();
 
 	$('.wrapper').addClass('loaded');
-	new WOW().init();
+
 
 
 	$(window).scroll(function () {
